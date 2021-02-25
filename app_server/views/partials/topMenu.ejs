@@ -1,40 +1,49 @@
-  <div class="ui secondary  menu grid pointing menu-small">
-      <div class="header item one wide column active">
-        <i class="globe icon"></i>
-        Genel
+<header  class="header bg-purple text-white ">
+  <div class="container px-0 px-lg-3">
+    <nav  class="navbar navbar-expand-lg  py-3 px-lg-0">
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-3 ml-lg-0 text-justify  ">
+          <li class="nav-item ">
+            <!-- Link--><a class="nav-link active" href="/">Anasayfa</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link--><a class="nav-link" href="shop.html">Alışveriş</a>
+          </li>
+          <li class="nav-item">
+            <!-- Link--><a class="nav-link" href="detail.html">Ürün Detayı</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="pagesDropdown" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sayfalar</a>
+            <div class="dropdown-menu mt-3" aria-labelledby="pagesDropdown">
+              <a class="dropdown-item border-0 transition-link" href="index.html">Anasayfa</a>
+              <a class="dropdown-item border-0 transition-link" href="shop.html">Alışveriş</a>
+              <a class="dropdown-item border-0 transition-link" href="detail.html">Ürün Detay</a>
+              <a class="dropdown-item border-0 transition-link" href="cart.html">Sepet</a>
+              <a class="dropdown-item border-0 transition-link" href="checkout.html">Ödeme</a>
+            </div>
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-lg-auto ml-3  text-justify ">               
+          <li class="nav-item"><a class="nav-link" href="cart.html"> <i class="fas fa-dolly-flatbed mr-1 text-gray"></i>Sepet<small class="text-gray">(2)</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"> <i class="far fa-heart mr-1"></i>Favoriler<small class="text-gray"> (0)</small></a></li>
+          <li class="nav-item"><a class="nav-link" href="/uLogin"> <i class="fas fa-user-alt mr-1 text-gray"></i>Giriş</a></li>
+          <li class="nav-item"><a class="nav-link" href="/uRegister"> <i class="fas fa-user-plus mr-1 text-gray"></i>Kayıt Ol</a></li>
+        </ul>
       </div>
-      <a class="item  two wide column">
-        <i class="list icon"></i>
-        Siparislerim
-      </a>
-      <a class="item two wide column">
-        <i class="cart arrow down icon"></i>
-        Anketli Indirim
-      </a>
-      <a class="item two wide column">
-        <i class="podcast icon"></i>
-        Satıs Rehberi
-      </a>
-      <a class="item two wide column">
-        <i class="question icon"></i>
-        Çözüm Merkezi
-       </a>
+    </nav>
+    <nav class="navbar navbar-expand-lg mt-0 mt-lg-3 pt-0 pt-lg-4  row">
 
-     
-        <div class="ui simple dropdown item right four wide column">
-            Giris Yap veya Kaydol
-          <i class="dropdown icon"></i>
-          <div class="menu menu-small" >
-            <a href="/uLogin"><div class="item"><i class="sign in alternate icon"></i> Giris Yap</div></a>
-            <div class="item"><i class="save icon"></i> Kaydol</div>
-            <div class="item">Hesabım</div>
-            <div class="item">Degerlendirmelerim</div>
-            <div class="item">Begendiklerim</div>
-            <div class="item">Listelerim</div>
-            <div class="item">Hediye Çeklerim</div>
-            <div class="item">Mesajlarım</div>
-          </div>
-        </div>
-      
-     
-    </div>
+      <a class="header-main-text col-lg-6 col-10 "  href="/"><span style="font-family:Cinzel Decorative !important;" class=" text-uppercase ">Alirim.com</span></a>
+      <button  class="navbar-toggler col-2 navbar-toggler-right text-white " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
+    
+      <form class="navbar-brand col-lg-6" action="#">
+      <div class="input-group  row ">
+        <input class="rounded-search-input form-control col-10 form-control-lg ml-1 p-4" type="search" placeholder="Arama" aria-describedby="button-search2">
+        
+          <button class="rounded-search-btn btn btn-dark btn-block col-2" id="button-search2" type="submit"><i class="fa fa-search"></i></button>
+        
+      </div>
+    </form>
+    </nav>
+  </div>
+</header>

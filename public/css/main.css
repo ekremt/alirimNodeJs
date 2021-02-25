@@ -1,33 +1,13 @@
 *{
   font-family:sans-serif;
+ 
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: white;
-  opacity: 0.8; /* Firefox */
+.bg-purple{
+  background-color: #491B3D !important;
 }
-footer{
-    position: fixed;
-    bottom: 0;
-    width: auto;
-    left: 0;
-    right: 0;
-    margin-bottom: 0px;
-    text-align: center !important;
+
+.header-main-text
+{
+  font-size: xx-large;
+  text-decoration: none !important;
 }
-   .menu-small{
-    font-size: 11px !important;
-  }
-  .menu-bottom-margin {
-    margin: 1rem 0;
-  }
-  .parent-search{
-      padding: 6px;
-      border-radius: 10px;
-  }
-  .search-result{
-    position: absolute !important;
-    margin-top: 127px;
-    display:none;
-    border-radius: 0px 0px 10px 10px; 
-    width: 100%;
-  }

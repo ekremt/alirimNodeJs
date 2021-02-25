@@ -24,6 +24,8 @@
 .login-header h1{
     color:white;
     padding:10px 20px;
+    font-family:sans-serif;
+    font-weight: normal;
     
 }
 .login-content .txt-box{
@@ -36,7 +38,7 @@
     background: none;
     border:1px white solid ;
     color:white;
-    border-radius: 15px;
+    border-radius: 30px;
 }
 .login-content input:focus{
     -webkit-box-shadow: 2px 2px 91px -2px white;   
