@@ -42,7 +42,7 @@ button:focus, button:active {
   position:absolute;
   height: 80px;
   width: 60px;
-  top:163px;
+  top:125px;
   left:30px;
   z-index: -1 !important;
   background-repeat: no-repeat  !important;
@@ -73,13 +73,32 @@ button:focus, button:active {
 	100% { -webkit-transform: rotate(0); }
 }
 .rounded-search-input{
-  border-radius:50px 0 !important;
+ border-radius:200px 0 !important;
+  
 }
+.rounded-search-input:focus{
+  border:none  !important;
+ 
+}
+.search-results{
+  position: absolute;
+  width: 70%;
+  height: 300px;
+  z-index: 99 !important;
+  background-color: white;
+  color:#6c757d;
+  top:41px;
+  left:5px;
+  border:none !important;
+  border-radius: 0 0 50px 0 !important;
+}
+
 .rounded-search-btn{
-  border-radius:50px 0 !important;
+  border-radius:200px 0 !important;
 }
 .navbar {
   position: relative;
+  
 
 }
 
@@ -1971,6 +1990,47 @@ STYLE SWITCHER FOR DEMO
   text-decoration: none;
 }
 
+.btn-soft-red {
+  color: #fff;
+  background-color: #7c5872;
+  border-color: #7c5872;
+}
+
+.btn-soft-red:hover {
+  color: #fff;
+  background-color: #7c5872;
+  border-color: #7c5872;
+}
+
+.btn-soft-red:focus, .btn-soft-red.focus {
+  box-shadow: 0 0 0 0.2rem #7c5872;
+  box-shadow: none;
+}
+
+.btn-soft-red.disabled, .btn-soft-red:disabled {
+  color: #fff;
+  background-color: #7c5872;
+  border-color: #7c5872;
+}
+
+.btn-soft-red:not(:disabled):not(.disabled):active, .btn-soft-red:not(:disabled):not(.disabled).active,
+.show > .btn-soft-red.dropdown-toggle {
+  color: #fff;
+  background-color: #7c5872;
+  border-color: #7c5872;
+}
+
+.btn-soft-red:not(:disabled):not(.disabled):active:focus, .btn-soft-red:not(:disabled):not(.disabled).active:focus,
+.show > .btn-soft-red.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem #7c5872;
+}
+
+.btn-soft-red:Focus {
+  text-decoration: none;
+}
+
+
+
 .btn-outline-primary {
   color: #dcb14a;
   background-color: transparent;
@@ -3488,4 +3548,67 @@ code {
 
 .breadcrumb-item.active {
   color: #aaa;
+}
+/* Linear Loading*/
+.linear-activity {
+  overflow: hidden;
+  width: 50%;
+  height: 4px;
+  background-color: #7c5872;
+  margin: 20px auto;
+}
+
+.determinate {
+  position: relative;
+  max-width: 100%;
+  height: 100%;
+  -webkit-transition: width 500ms ease-out 1s;
+     -moz-transition: width 500ms ease-out 1s;
+       -o-transition: width 500ms ease-out 1s;
+          transition: width 500ms ease-out 1s;
+  background-color: #491B3D;
+}
+
+.indeterminate {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.indeterminate:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #491B3D;
+  animation: indeterminate_first 1.5s infinite ease-out;
+}
+
+.indeterminate:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  background-color: #7c5872;
+  animation: indeterminate_second 1.5s infinite ease-in;
+}
+
+@keyframes indeterminate_first {
+  0% {
+      left: -100%;
+      width: 100%;
+  }
+  100% {
+      left: 100%;
+      width: 10%;
+  }
+}
+
+@keyframes indeterminate_second {
+  0% {
+      left: -150%;
+      width: 100%;
+  }
+  100% {
+      left: 100%;
+      width: 10%;
+  }
 }

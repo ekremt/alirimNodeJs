@@ -9,9 +9,14 @@ $(document).ready(()=>{
  $('#result').toggle('slow');
 });
 
-$('.browse')
-  .popup()
-;
 
+
+  $(".rounded-search-input").focusin(function(){
+      $(".search-results").slideToggle("slow");
+      
+    }).focusout(function(){
+      $(".search-results").slideToggle("slow");
+    
+  });
 
 });

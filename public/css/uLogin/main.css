@@ -44,6 +44,7 @@
     -webkit-box-shadow: 2px 2px 91px -2px white;   
     -moz-box-shadow: 2px 2px 91px -2px white; 
     box-shadow: 2px 2px 91px -2px white;
+    transition: .5s;
     
 }
 
@@ -66,6 +67,7 @@
     -webkit-box-shadow: 2px 2px 91px -2px white;   
     -moz-box-shadow: 2px 2px 91px -2px white; 
     box-shadow: 2px 2px 91px -2px white;
+    transition: .5s;
    
  }
 .login-box-before{
